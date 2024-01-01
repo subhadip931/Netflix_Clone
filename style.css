@@ -9,6 +9,7 @@
 
  body {
     background-color: rgb(58, 58, 58);
+    position: relative;
  }
 
  .main {
@@ -58,6 +59,16 @@
     padding: 0px 15px;
     cursor: pointer;
  }
+ .button-eng-x-h{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.296);
+    color: white;
+    border-radius: 5px;
+    height: 32px;
+    padding: 0px 15px;
+    cursor: pointer;
+    display: none;
+ }
 
  .navbar img {
     width: 148px;
@@ -71,6 +82,13 @@
 
     .button-eng-x {
        padding: 0px 0px;
+       display: none;
+    }
+    .button-eng-x-h {
+       padding: 0px 0px;
+       display: inline-block;
+       text-align: center;
+       width: 50px;
     }
 
     .navbar img {
@@ -387,3 +405,66 @@
       font-size: 12px;
     }
  }
+ .cover{
+   height: 100vh;
+   width: 100vw;
+   backdrop-filter: blur(8px);
+   z-index: 15;
+   position: fixed;
+   top: 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .login{
+   height: 350px;
+   width: 300px;
+   border: 2px solid red;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   animation: loginanimation 1s ease-out 0s 1 ;
+   position: relative;
+ }
+ @keyframes loginanimation{
+   from{
+      transform: scale(0.7);
+   }
+   to{
+      transform: scale(1);
+   }
+ }
+ .username input, .password input{
+    border: 2px solid red;
+    background-color: rgba(0, 0, 0, 0.296);
+    color: white;
+    border-radius: 5px;
+    height: 32px;
+    padding: 0px 15px;
+    cursor: pointer;
+    width: 220px;
+   }
+ .buttonlog button{
+   background-color: blue;
+   color: white;
+   height: 32px;
+   border: none;
+   margin-left: 10px;
+   border-radius: 5px;
+   padding: 0px 10px;
+   cursor: pointer;
+   border: 2px solid white;
+}
+.cross{
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   font-size: 40px;
+   cursor: pointer;
+}
+.hidden{
+  display: none;
+}
