@@ -1,0 +1,389 @@
+ @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+
+ * {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+    background-color: rgb(58, 58, 58);
+ }
+
+ .main {
+    background-image: url(IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 700px;
+    position: relative;
+    background-position: center center;
+    /* background-size: max(1200px, 100vw); */
+ }
+
+ .box {
+    height: 700px;
+    background-color: black;
+    opacity: 0.50;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+ }
+
+ .navbar {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+ }
+
+ .button-sign {
+    background-color: red;
+    color: white;
+    height: 32px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    cursor: pointer;
+ }
+
+ .button-eng-x {
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.296);
+    color: white;
+    border-radius: 5px;
+    height: 32px;
+    padding: 0px 15px;
+    cursor: pointer;
+ }
+
+ .navbar img {
+    width: 148px;
+    cursor: pointer;
+ }
+
+ @media only screen and (max-width: 700px) {
+    .navbar {
+       max-width: 90vw;
+    }
+
+    .button-eng-x {
+       padding: 0px 0px;
+    }
+
+    .navbar img {
+       width: 120px;
+    }
+
+    .main {
+       height: 500px;
+    }
+
+    .box {
+       height: 500px;
+    }
+ }
+
+ .hero {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 23px;
+    max-width: 80vw;
+    margin: auto;
+ }
+
+ .hero span {
+    text-align: center;
+ }
+
+ .hero> :nth-child(1) {
+    font-weight: bolder;
+    font-size: 48px;
+ }
+
+ .hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 800;
+ }
+
+ .hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 800;
+ }
+
+ .searchbox {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+ }
+
+ .searchbox>:nth-child(1) {
+    padding: 14px 65px;
+    background-color: rgba(0, 0, 0, 0.296);
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 15px;
+ }
+
+ .searchbox>:nth-child(2) {
+    padding: 14px 20px;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    font-weight: 900;
+    font-size: 15px;
+ }
+
+ input::placeholder {
+    color: white;
+    text-align: center;
+ }
+
+ @media only screen and (max-width: 700px) {
+    .hero {
+       height: 85%;
+    }
+
+    .hero> :nth-child(1) {
+       font-weight: 900;
+       font-size: 22px;
+       margin: 0px 20px;
+    }
+
+    .hero> :nth-child(2) {
+       font-size: 18px;
+       font-weight: 400;
+    }
+
+    .hero> :nth-child(3) {
+       font-size: 16px;
+       font-weight: 400;
+       margin: 0px 15px
+    }
+
+    .searchbox>:nth-child(1) {
+       padding: 10px 50px;
+       font-size: 12px;
+    }
+
+    .searchbox>:nth-child(2) {
+       padding: 10px 25px;
+       font-size: 12px;
+    }
+ }
+
+ .pngvideo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+    max-width: 80vw;
+    height: 100%;
+ }
+
+ .vdopng12>:nth-child(1) {
+    position: absolute;
+    top: 78px;
+    right: 87px;
+    height: 290px;
+ }
+
+ .vdopng12>:nth-child(2) {
+    height: 468px;
+    position: relative;
+ }
+
+ .vdopng12 {
+    position: relative;
+ }
+
+ .textpngv11 h1 {
+    font-weight: bolder;
+    font-size: 42px;
+    text-align: center;
+ }
+
+ .textpngv11 p {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+ }
+
+ .textpngv11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+ }
+
+ .pngvdotop1 {
+    background-color: black;
+    height: 580px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #rajma{
+   height: 215px;
+   right: 125px;
+   top: 49px;
+ }
+
+ @media only screen and (max-width: 700px) {
+    .pngvideo1 {
+       gap: 0px;
+       flex-wrap: wrap;
+       max-width: 85vw;
+       height: 100%;
+    }
+    #rajma{
+      height: 104px;
+      right: 60px;
+      top: 23px;  
+    }
+
+    .pngvdotop1 {
+       height: 400px;
+    }
+
+    .vdopng12>:nth-child(1) {
+       height: 138px;
+       right: 24px;
+       top: 37px;
+    }
+
+    .vdopng12>:nth-child(2) {
+       height: 220px;
+    }
+
+    .textpngv11 h1 {
+       font-size: 22px;
+    }
+
+    .textpngv11 p {
+       font-size: 14px;
+    }
+ }
+ .freq{
+   background-color: black;
+   margin-top: 8px;
+   height: 850px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;  
+ }
+ .ques{
+   font-weight: bolder;
+    font-size: 42px;
+    text-align: center;
+    padding-bottom: 15px;
+ }
+ .plus{
+   width: 80vw;
+   height: 70px;
+   background-color: rgb(58, 58, 58);
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0px 10px;
+ }
+ .plus:hover{
+   background-color: rgb(90, 89, 89);
+ }
+ .plus span{
+   font-size: 22px;
+    font-weight: 400;
+ }
+ .plus>:nth-child(2){
+   font-size: 40px;
+
+ }
+ .ready{
+   text-align: center;
+   font-size: 20px;
+    font-weight: 800;
+    width: 80vw;
+    padding-top: 15px;
+ }
+ @media only screen and (max-width: 700px){
+   .plus{
+      height: 40px;
+   }
+   .ques{
+       font-size: 24px;
+    }
+    .plus>:nth-child(2){
+      font-size: 30px;
+    }
+    .ready{
+      font-size: 14px;
+    }
+    .plus span{
+      font-size: 14px;
+    }
+    .freq{
+      height: 600px;
+    }
+ }
+ .foot{
+   background-color: black;
+   height: 350px;
+   margin-top: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .faq{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: start;
+   align-items: center;
+   gap: 120px;
+ }
+ .footl1{
+   width: 70vw;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+ a{
+   color: rgba(255, 255, 255, 0.429);
+   font-size: 15px;
+ }
+ @media only screen and (max-width: 700px){
+   .foot{
+      height: 400px;
+      align-items: center;
+      justify-content: center;
+    }
+    .faq{
+      gap: 20px;
+      justify-content: start;
+      align-items: center;
+    }
+    .footl1{
+      width: 85vw;
+    }
+    a{
+      color: rgba(255, 255, 255, 0.429);
+      font-size: 12px;
+    }
+ }
