@@ -19,7 +19,13 @@
                     <option value="Hindi">Hindi</option>
                     <option value="Bengali">Bengali</option>
                 </select>
-                <button class="button-sign">Sign In</button>
+                <select class="button-eng-x-h" name="Language" id="lang">
+                    <option class="disabled-a" value="" disabled selected hidden>अ</option>
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Bengali">Bengali</option>
+                </select>
+                <button id="signin" class="button-sign">Sign In</button>
             </div>
         </nav>
         <div class="hero">
@@ -154,6 +160,16 @@
             <div style="margin: 10px 0px;">Netflix India</div>
         </div>
     </div>
+    <div id="cover1" class="cover hidden">
+        <div class="login">
+            <span id="cross" class="cross">×</span>
+            <h1>User Login</h1>
+            <div class="username"><input type="text" placeholder="Username"></div>
+            <div class="password"><input type="text" placeholder="password"></div>
+            <div class="buttonlog"><button>LogIn</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
